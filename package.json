@@ -131,7 +131,7 @@
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Parnpradub/DocCrop.git"
+    "url": "https://github.com/travisyates81/orange_placard.git"
   },
   "scripts": {
     "jshint": "jshint www && jshint src && jshint tests",
