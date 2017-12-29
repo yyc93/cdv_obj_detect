@@ -272,25 +272,6 @@ public class DocDetect extends Activity {
 
 
                 if(mPreview.x1 > -1){
-//                    Intent mIntent = new Intent(DocDetect.this, DocCrop.class);
-//                    mIntent.putExtra("image_path", mFilePath );
-//
-//                    mIntent.putExtra("x1",mPreview.x1);
-//                    mIntent.putExtra("y1",mPreview.y1);
-//                    mIntent.putExtra("x2",mPreview.x2);
-//                    mIntent.putExtra("y2",mPreview.y2);
-//                    mIntent.putExtra("x3",mPreview.x3);
-//                    mIntent.putExtra("y3",mPreview.y3);
-//                    mIntent.putExtra("x4",mPreview.x4);
-//                    mIntent.putExtra("y4",mPreview.y4);
-//                    mIntent.putExtra("xscale",mPreview.mDefaultSize.height);
-//                    mIntent.putExtra("yscale",mPreview.mDefaultSize.width);
-//
-//                    startActivity(mIntent);
-//                    finish();
-
-
-
 
                     a1 = mPreview.x1;
                     b1 = mPreview.y1;
@@ -341,20 +322,11 @@ public class DocDetect extends Activity {
                         cornerPoint1.add(p5);
                         cornerPoint1.add(p6);
 
-                        //Log.d("Points",a1+":"+b1+":"+a2+":"+b2+":"+a3+":"+b3+":"+a4+":"+b4+":"+c1);
-
-
-//                    imageView = findViewById(R.id.imageView1);
-//                    imageView1 = findViewById(R.id.imageView2);
-
                         Mat startM = Converters.vector_Point2f_to_Mat(cornerPoint);
                         mResultBmp = imageProcess.warpAuto(realImage, startM);
 
                         Mat Upper = new Mat();
                         Utils.bitmapToMat(mResultBmp, Upper);
-                        //Imgproc.cvtColor(Upper, Upper, Imgproc.COLOR_RGB2GRAY);
-//        Upper=Invert(Upper);
-                        //Imgproc.threshold(Upper,Upper,100,255,Imgproc.THRESH_BINARY);
 
                         Utils.matToBitmap(Upper, mResultBmp);
                         Mat startM1 = Converters.vector_Point2f_to_Mat(cornerPoint1);
@@ -368,16 +340,9 @@ public class DocDetect extends Activity {
                             }
                         }
 
-//                    imageView.setImageBitmap(mResultBmp);
-//                    imageView1.setImageBitmap(mResultBmp1);
-//                    storeImage(mResultBmp);
-//                    storeImage(mResultBmp1);
-
                         //OCR using Tesseract api
                         String OCRresult = null, OCRresult1 = null;
                         mTess.setImage(mResultBmp);
-
-//                        imageView.setImageBitmap(mResultBmp);
 
                         OCRresult = mTess.getUTF8Text();
                         mTess.setImage(mResultBmp1);
@@ -388,8 +353,19 @@ public class DocDetect extends Activity {
                         if (!(checkString(OCRresult)=="" && checkString(OCRresult1) ==""))
                             str = checkString(OCRresult) + "/" + checkString(OCRresult1);
                         Log.d(TAG,str);
+
+                        JSONObject obj = new JSONObject();
+                        try {
+                            obj.put("data", str);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        Config.request.results.put(obj);
+                        Config.pendingRequests.resolveWithSuccess(Config.request);
+
+                        finish();
                     }
-                    mCamera.startPreview();
+                    // mCamera.startPreview();
                 }
                 else {
                     Toast.makeText(DocDetect.this, "Docs is not detected.Please try again!!", Toast.LENGTH_LONG).show();
