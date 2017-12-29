@@ -53,21 +53,13 @@
     "url": "https://github.com/apache/cordova-plugin-media-capture/issues"
   },
   "cordova": {
-    "id": "cordova-doc-crop-plugin",
+    "id": "cordova-orange-placard-plugin",
     "platforms": [
-      "android",
-      "amazon-fireos",
-      "ubuntu",
-      "ios",
-      "blackberry10",
-      "wp7",
-      "wp8",
-      "windows8",
-      "windows"
+      "android"
     ]
   },
   "dependencies": {},
-  "description": "Cordova Doc Crop Plugin",
+  "description": "Cordova Orange Placard Plugin",
   "devDependencies": {
     "jshint": "^2.6.0"
   },
@@ -89,15 +81,7 @@
     "media",
     "capture",
     "ecosystem:cordova",
-    "cordova-android",
-    "cordova-amazon-fireos",
-    "cordova-ubuntu",
-    "cordova-ios",
-    "cordova-blackberry10",
-    "cordova-wp7",
-    "cordova-wp8",
-    "cordova-windows8",
-    "cordova-windows"
+    "cordova-android"
   ],
   "license": "Apache-2.0",
   "maintainers": [
