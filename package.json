@@ -110,7 +110,7 @@
       "email": "stevengill97@gmail.com"
     }
   ],
-  "name": "cordova-plugin-media-capture",
+  "name": "cordova-plugin-doc-crop",
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "repository": {
@@ -122,5 +122,5 @@
     "test": "npm run jshint"
   },
   "types": "./types/index.d.ts",
-  "version": "1.4.3"
+  "version": "1.4.4"
 }
