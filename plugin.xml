@@ -19,9 +19,9 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:rim="http://www.blackberry.com/ns/widgets"
-           id="cordova-plugin-doc-crop"
-      version="1.0.0">
-    <name>DocCrop</name>
+           id="cordova-plugin-doc-detect"
+      version="1.0.1">
+    <name>DocDetect</name>
 
     <description>Doc Crop using Perspective Transform</description>
     <license>Apache 2.0</license>

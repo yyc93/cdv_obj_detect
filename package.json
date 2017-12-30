@@ -2,10 +2,10 @@
   "_args": [
     [
       {
-        "raw": "cordova-plugin-doc-crop",
+        "raw": "cordova-plugin-doc-detect",
         "scope": null,
-        "escapedName": "cordova-plugin-doc-crop",
-        "name": "cordova-plugin-doc-crop",
+        "escapedName": "cordova-plugin-doc-detect",
+        "name": "cordova-plugin-doc-detect",
         "rawSpec": "",
         "spec": "latest",
         "type": "tag"
@@ -13,14 +13,14 @@
       "E:\\AndroidWork\\CordovaPro\\idrecorgplug\\node_modules"
     ]
   ],
-  "_from": "cordova-plugin-doc-crop@latest",
-  "_id": "cordova-plugin-doc-crop@1.4.4",
+  "_from": "cordova-plugin-doc-detect@latest",
+  "_id": "cordova-plugin-doc-detect@1.4.4",
   "_inCache": true,
-  "_location": "/cordova-plugin-doc-crop",
+  "_location": "/cordova-plugin-doc-detect",
   "_nodeVersion": "6.10.1",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/cordova-plugin-doc-crop-1.4.4.tgz_1493685648831_0.005625565070658922"
+    "tmp": "tmp/cordova-plugin-doc-detect-1.4.4.tgz_1493685648831_0.005625565070658922"
   },
   "_npmUser": {
     "name": "filmaj",
@@ -29,10 +29,10 @@
   "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "cordova-plugin-doc-crop",
+    "raw": "cordova-plugin-doc-detect",
     "scope": null,
-    "escapedName": "cordova-plugin-doc-crop",
-    "name": "cordova-plugin-doc-crop",
+    "escapedName": "cordova-plugin-doc-detect",
+    "name": "cordova-plugin-doc-detect",
     "rawSpec": "",
     "spec": "latest",
     "type": "tag"
@@ -41,16 +41,16 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-doc-crop/-/cordova-plugin-doc-crop-1.4.4.tgz",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-doc-detect/-/cordova-plugin-doc-detect-1.4.4.tgz",
   "_shasum": "20e3bbe334fbb89f624b02188eac5372743920fa",
   "_shrinkwrap": null,
-  "_spec": "cordova-plugin-doc-crop",
+  "_spec": "cordova-plugin-doc-detect",
   "_where": "E:\\AndroidWork\\CordovaPro\\idrecorgplug\\node_modules",
   "author": {
     "name": "Apache Software Foundation"
   },
   "bugs": {
-    "url": "https://github.com/apache/cordova-plugin-doc-crop/issues"
+    "url": "https://github.com/apache/cordova-plugin-doc-detect/issues"
   },
   "cordova": {
     "id": "cordova-orange-placard-plugin",
@@ -66,7 +66,7 @@
   "directories": {},
   "dist": {
     "shasum": "20e3bbe334fbb89f624b02188eac5372743920fa",
-    "tarball": "https://registry.npmjs.org/cordova-plugin-doc-crop/-/cordova-plugin-doc-crop-1.4.4.tgz"
+    "tarball": "https://registry.npmjs.org/cordova-plugin-doc-detect/-/cordova-plugin-doc-detect-1.4.4.tgz"
   },
   "engines": {
     "cordovaDependencies": {
@@ -110,7 +110,7 @@
       "email": "stevengill97@gmail.com"
     }
   ],
-  "name": "cordova-plugin-doc-crop",
+  "name": "cordova-plugin-doc-detect",
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "repository": {
