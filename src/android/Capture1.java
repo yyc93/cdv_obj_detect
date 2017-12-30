@@ -132,8 +132,8 @@ public class Capture1 extends CordovaPlugin {
 
         JSONObject options = args.optJSONObject(0);
 
-        if (action.equals("docCrop")) {
-            this.docCrop(pendingRequests.createRequest(RECOGNIZE_ID, options, callbackContext));
+        if (action.equals("docDetect")) {
+            this.docDetect(pendingRequests.createRequest(RECOGNIZE_ID, options, callbackContext));
         }
         else if (action.equals("captureImage")) {
             this.captureImage(pendingRequests.createRequest(CAPTURE_IMAGE, options, callbackContext));
@@ -203,7 +203,7 @@ public class Capture1 extends CordovaPlugin {
     /**
      * Sets up an intent to capture images.  Result handled by onActivityResult()
      */
-    private void docCrop(Request req) {
+    private void docDetect(Request req) {
         boolean needExternalStoragePermission =
                 !PermissionHelper.hasPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE);
 

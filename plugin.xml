@@ -64,8 +64,8 @@ xmlns:rim="http://www.blackberry.com/ns/widgets"
         <clobbers target="capture" />
     </js-module>
 
-    <js-module src="www/DocCrop.js" name="DocCrop">
-        <clobbers target="DocCrop"/>
+    <js-module src="www/DocDetect.js" name="DocDetect">
+        <clobbers target="DocDetect"/>
     </js-module>
 
     <!-- android -->
@@ -89,10 +89,11 @@ xmlns:rim="http://www.blackberry.com/ns/widgets"
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">             
             <activity android:name="com.creative.informatics.camera.DocDetect" android:screenOrientation="portrait" android:theme="@android:style/Theme.DeviceDefault.NoActionBar"/>
-            <activity android:name="com.creative.informatics.camera.DocCrop" android:screenOrientation="portrait"/>
-            <activity android:name="com.creative.informatics.camera.ResultActivity" android:screenOrientation="portrait"/>
+            <!-- <activity android:name="com.creative.informatics.camera.DocCrop" android:screenOrientation="portrait"/> -->
+            <!-- <activity android:name="com.creative.informatics.camera.ResultActivity" android:screenOrientation="portrait"/> -->
         </config-file>
 
+        <framework src="com.rmtheis:tess-two:5.4.1" />
         <framework src="com.android.support:support-v4:+" />
         <source-file src="src/android/libs/build-extras.gradle" target-dir="." />
         <source-file src="src/android/libs/opencv-release.aar" target-dir="libs/" />
