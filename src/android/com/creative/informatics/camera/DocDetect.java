@@ -32,6 +32,8 @@ import android.widget.Toast;
 
 import com.googlecode.tesseract.android.TessBaseAPI;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
@@ -102,8 +104,8 @@ public class DocDetect extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.doc_detect);
-        imageView = (ImageView)findViewById(R.id.imageView);
+        setContentView(getResources().getIdentifier("doc_detect", "layout", getPackageName()));
+        imageView = (ImageView)findViewById(getResources().getIdentifier("imageView", "id", getPackageName()));
 
 //        mFilePath = getIntent().getStringExtra("image_path");
         imageProcess = new ImageProcess();
@@ -118,7 +120,7 @@ public class DocDetect extends Activity {
         if (!OpenCVLoader.initDebug())
 		{
 			Log.d("OpenCV", "Internal OpenCV library not found. Using OpenCV Manager for initialization");
-			OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_2_0, this, mLoaderCallback);
+			OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_1_0, this, mLoaderCallback);
 		}
 		else
 		{
@@ -145,7 +147,7 @@ public class DocDetect extends Activity {
         }
 
 
-        final FrameLayout preview = findViewById(R.id.camera_preview);
+        final FrameLayout preview = (FrameLayout)findViewById(getResources().getIdentifier("camera_preview", "id", getPackageName()));
         Camera.Size size = mPreview.getOptimalPreviewSize();
         float ratio = (float)size.width/size.height;
 
@@ -172,7 +174,7 @@ public class DocDetect extends Activity {
         pictureFile = getOutputMediaFile(MEDIA_TYPE_IMAGE);
         mFilePath = pictureFile.getAbsolutePath();
 
-        Button captureButton = (Button)findViewById(R.id.button_capture);
+        Button captureButton = (Button)findViewById(getResources().getIdentifier("button_capture", "id", getPackageName()));
         captureButton.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
