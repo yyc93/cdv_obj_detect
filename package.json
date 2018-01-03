@@ -14,13 +14,13 @@
     ]
   ],
   "_from": "cordova-plugin-doc-detect@latest",
-  "_id": "cordova-plugin-doc-detect@1.4.4",
+  "_id": "cordova-plugin-doc-detect@1.4.5",
   "_inCache": true,
   "_location": "/cordova-plugin-doc-detect",
   "_nodeVersion": "6.10.1",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/cordova-plugin-doc-detect-1.4.4.tgz_1493685648831_0.005625565070658922"
+    "tmp": "tmp/cordova-plugin-doc-detect-1.4.5.tgz_1493685648831_0.005625565070658922"
   },
   "_npmUser": {
     "name": "filmaj",
@@ -41,7 +41,7 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-doc-detect/-/cordova-plugin-doc-detect-1.4.4.tgz",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-doc-detect/-/cordova-plugin-doc-detect-1.4.5.tgz",
   "_shasum": "20e3bbe334fbb89f624b02188eac5372743920fa",
   "_shrinkwrap": null,
   "_spec": "cordova-plugin-doc-detect",
@@ -66,7 +66,7 @@
   "directories": {},
   "dist": {
     "shasum": "20e3bbe334fbb89f624b02188eac5372743920fa",
-    "tarball": "https://registry.npmjs.org/cordova-plugin-doc-detect/-/cordova-plugin-doc-detect-1.4.4.tgz"
+    "tarball": "https://registry.npmjs.org/cordova-plugin-doc-detect/-/cordova-plugin-doc-detect-1.4.5.tgz"
   },
   "engines": {
     "cordovaDependencies": {
@@ -122,5 +122,5 @@
     "test": "npm run jshint"
   },
   "types": "./types/index.d.ts",
-  "version": "1.4.4"
+  "version": "1.4.5"
 }
